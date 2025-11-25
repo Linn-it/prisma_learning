@@ -79,7 +79,7 @@ export function InventoryTable({ plants }: any) {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {filterPlants?.map((plant) => (
+          {filterPlants?.map((plant : any) => (
             <TableRow key={plant.id}>
               <TableCell className="font-medium text-primary hover:underline">
                 <Link href={`plants/${plant.id}`}>{plant.id}</Link>

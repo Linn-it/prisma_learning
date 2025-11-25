@@ -15,7 +15,7 @@ export default async function PlantDetail({
             <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-12">
                 <div className="flex flex-wrap items-center gap-12">
                     <div className="relative w-[400px] h-[400px] md:w-[500px] md:h-[500px] text-end">
-                        <Image className="object-cover rounded-2xl" src={plant?.imageUrl} fill alt="" />
+                        <Image className="object-cover rounded-2xl" src={plant?.imageUrl ?? "/next.svg"} fill alt="" />
                     </div>
                     <div className="text-2xl font-medium text-primary font-sans">
                         <p className="mb-3">Name: {plant?.name}</p>
